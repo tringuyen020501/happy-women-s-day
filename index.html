@@ -26,17 +26,15 @@
 
     <div id="main">
         <div id="wrap">
-            <div id="text" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;">
+            <div id="text" style="font-family:'Pacifico, cursive' ;">
                 <div id="code">
-                    <div class="say" style="color: #E83845">Hi Hiền Cindy và Thảo Nguyên xinh đẹp🥰🥰🥰<br>
-                        8/3 này tớ chúc hai cậu sẽ có một ngày thật ý nghĩa🤪<br>
-                        Phụ nữ sinh ra đã là phái đẹp, chúc hai cậu luôn giữ được dáng vẻ xinh đẹp, nụ cười như hoa và thành công như mong ước😚 <br>
-                        Happy Women’s Day! Chúc hai cậu mãi giữ được vẻ rạng ngời, hạnh phúc và thuận lợi trong tình yêu, công việc và cuộc sống nhé😍
-                            <br>
-                        <br>
-                        <span class="space"><img src="./image/tym.png" alt=""><br>
+                    <div class="say" style="color: #E83845"><span class="say"> Hi Hiền Cindy và Thảo Nguyên xinh đẹp🥰🥰🥰</span><br>
+                            <span class="say">8/3 này tớ chúc hai cậu sẽ có một ngày thật ý nghĩa🤪</span><br>
+                            <span class="say"></span>Phụ nữ sinh ra đã là phái đẹp, chúc hai cậu luôn giữ được dáng vẻ xinh đẹp, nụ cười như hoa và thành công như mong ước😚</span> <br>
+                            <span class="say"></span>Happy Women’s Day! Chúc hai cậu mãi giữ được vẻ rạng ngời, hạnh phúc và thuận lợi trong tình yêu, công việc và cuộc sống nhé😍</span><br>
+                            <span class="space"><img src="./image/tym.png" alt=""><br>
                     </div>
-                    </p>
+                    <!-- </p> -->
                 </div>
             </div>
             <div id="clock-box">
@@ -169,7 +167,7 @@
 
                 canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
                 canvas.css("background", "#ffe");
-                $await(Jscex.Async.sleep(100));
+                $await(Jscex.Async.sleep(300));
                 canvas.css("background", "none");
             }));
 
@@ -201,7 +199,7 @@
             // };
 
             var startCountdown = function () {
-                setInterval(updateCountdown, 1000);
+            setInterval(updateCountdown, 1000);
             };
 
             var textAnimate = eval(Jscex.compile("async", function () {
@@ -213,11 +211,11 @@
                 together.setMilliseconds(0);
 
                 $("#code").show().typewriter();
-                $("#clock-box").fadeIn(500);
+                // $("#clock-box").fadeIn(500);
                 startCountdown();
                 while (true) {
                     timeElapse(together);
-                    $await(Jscex.Async.sleep(100));
+                    $await(Jscex.Async.sleep(500));
                 }
             }));
 
